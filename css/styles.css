@@ -40,6 +40,14 @@ header .nav a{
     padding-right: 10vw;
 }
 
+.the-media{
+    background-color: #e6e6e6;
+}
+
+.the-media .container img{
+    width: 100%;
+}
+
 
 @media only screen and (max-width: 768px){
     header .nav{
