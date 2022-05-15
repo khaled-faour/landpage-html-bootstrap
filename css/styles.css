@@ -1,5 +1,4 @@
 body{
-    background-color: black;
     font-family: 'Roboto', sans-serif;
 }
 .logo{
@@ -19,13 +18,7 @@ header .nav a{
     display: none;
 }
 
-.landing-section{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    max-height: 50vh;
-}
+
 .landing-section .card .card-img{
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/IMG_9780.JPG');
     background-position:center center;
@@ -40,10 +33,15 @@ header .nav a{
     bottom: 7vw;
 }
 
+.summary-section .information img, .summary-section .information .text{
+    width: 50%;
+}
+.summary-section .information .text{
+    padding-right: 10vw;
+}
+
+
 @media only screen and (max-width: 768px){
-    body{
-        background-color: white;
-    }
     header .nav{
         flex-direction: column;
         justify-content: space-around;
@@ -70,7 +68,7 @@ header .nav a{
         display: none;
         border: none;
         background-color: transparent;
-        color: black;
+        color: white;
         font-size: 20px;
         z-index: 1;
     }
@@ -84,5 +82,8 @@ header .nav a{
         padding-top: calc(85vmax/2 + 130px);
         padding-left: 30px;
         width: 60%;
+    }
+    .summary-section .information img, .summary-section .information .text{
+        width: 100%
     }
 }
