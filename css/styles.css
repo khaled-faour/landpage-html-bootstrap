@@ -5,13 +5,39 @@ body{
 .logo{
     width: 63px;
 }
-
+header{
+    position: absolute;
+    top:0;
+    z-index: 1;
+    width: 100%;
+}
 header .nav a{
     color:white;
 }
 
 #show-button, #hide-button{
     display: none;
+}
+
+.landing-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    max-height: 50vh;
+}
+.landing-section .card .card-img{
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/imgs/IMG_9780.JPG');
+    background-position:center center;
+    background-size: cover;
+    min-height: 100vmin;
+}
+.landing-section .card-img-overlay{
+    width: 50%;
+}
+.landing-section .card-img-overlay .content{
+    position: absolute;
+    bottom: 7vw;
 }
 
 @media only screen and (max-width: 768px){
@@ -50,5 +76,13 @@ header .nav a{
     }
     #show-button{
         display: block;
+    }
+    .landing-section .card .card-img{
+        min-height: 100vmax;
+    }
+    .landing-section .card-img-overlay{
+        padding-top: calc(85vmax/2 + 130px);
+        padding-left: 30px;
+        width: 60%;
     }
 }
