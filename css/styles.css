@@ -1,3 +1,19 @@
+.btn-success, .bg-success {
+    background-color: #0d0!important;
+}
+.text-success {
+    color: #0d0!important;
+}
+
+h1{
+    font-size: calc(2.5vw + 1rem);
+}
+h4{
+    font-size: calc(0.5vw + 1rem);
+}
+p, p a{
+    font-size: calc(0.6vw + 1rem);
+}
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -31,6 +47,8 @@ header .nav a{
 .landing-section .card-img-overlay .content{
     position: absolute;
     bottom: 7vw;
+    max-width: 40vw;
+    padding-left: 5vw;
 }
 
 .summary-section .information img, .summary-section .information .text, .graduates .text{
@@ -81,13 +99,16 @@ footer .social-media a:hover{
 @media only screen and (max-width: 768px){
     header .nav{
         flex-direction: column;
-        justify-content: space-around;
+        /* justify-content: space-evenly; */
         align-items: center;
+        justify-content: center;
         position: fixed;
         top: 0;
         right: 0;
         left: 100vw;
         height: 100vh;
+        background-color: white;
+        transition: left 0.1s ease-in;
     }
     header .nav a{
         color: black;
@@ -105,7 +126,7 @@ footer .social-media a:hover{
         display: none;
         border: none;
         background-color: transparent;
-        color: white;
+        color: grey;
         font-size: 20px;
         z-index: 1;
     }
@@ -113,14 +134,14 @@ footer .social-media a:hover{
         display: block;
     }
     .landing-section .card .card-img{
-        min-height: 100vmax;
+        min-height: 90vmax;
     }
     .landing-section .card-img-overlay{
         padding-top: calc(85vmax/2 + 130px);
         padding-left: 30px;
         width: 60%;
     }
-    .summary-section .information img, .summary-section .information .text{
+    .summary-section .information img, .summary-section .information .text, .graduates .text{
         width: 100%
     }
 }
