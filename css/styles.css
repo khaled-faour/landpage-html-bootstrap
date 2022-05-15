@@ -33,10 +33,10 @@ header .nav a{
     bottom: 7vw;
 }
 
-.summary-section .information img, .summary-section .information .text{
+.summary-section .information img, .summary-section .information .text, .graduates .text{
     width: 50%;
 }
-.summary-section .information .text{
+.summary-section .information .text, .graduates .text{
     padding-right: 10vw;
 }
 
