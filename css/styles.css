@@ -40,12 +40,20 @@ header .nav a{
     padding-right: 10vw;
 }
 
-.the-media{
+.the-media, .newsletter{
     background-color: #e6e6e6;
 }
 
 .the-media .container img, .strategic .container img{
     width: 100%;
+}
+.newsletter .subscribe-button button{
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.newsletter .subscribe-button button:hover{
+    opacity: .9;
 }
 
 
