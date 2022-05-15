@@ -10,6 +10,10 @@ header .nav a{
     color:white;
 }
 
+#show-button, #hide-button{
+    display: none;
+}
+
 @media only screen and (max-width: 768px){
     body{
         background-color: white;
@@ -37,13 +41,14 @@ header .nav a{
         color: black !important;
     }
     #show-button, #hide-button{
+        display: none;
         border: none;
         background-color: transparent;
         color: black;
         font-size: 20px;
         z-index: 1;
     }
-    #hide-button{
-        display: none;
+    #show-button{
+        display: block;
     }
 }
