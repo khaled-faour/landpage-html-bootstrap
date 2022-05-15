@@ -3,19 +3,22 @@
     <head>
         <meta charset="UTF-8">
         
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
         
-     <!-- Google Fonts -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-     
-     <link rel="icon" type="image/x-icon" href="./imgs/SE-Grey-Icon-RGB-01+copy (1).png">
-     
-    <link rel="stylesheet" href="./css/styles.css"/>
-    <title>SE Factory - Empowering Youth With Tech Jobs</title>
-</head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+            
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="icon" type="image/x-icon" href="./imgs/SE-Grey-Icon-RGB-01+copy (1).png">
+        
+        <link rel="stylesheet" href="./css/styles.css"/>
+        <title>SE Factory - Empowering Youth With Tech Jobs</title>
+    </head>
 
 <body>
     <!-- Header Section -->
@@ -25,8 +28,24 @@
             <div class="flex-grow-1">
                 <img class="logo" src="./imgs/SE-Grey-Icon-RGB-01+copy.png" alt="SE Factory Logo">
             </div>
+
+            <!-- Header Nav Button (small screen onlu) -->
+            <script>
+                function showNavlist(){
+                    document.getElementById('nav-list').style.left = 0;
+                    document.getElementById('show-button').style.display = 'none';
+                    document.getElementById('hide-button').style.display = 'block';
+                }
+                function hideNavlist(){
+                    document.getElementById('nav-list').style.left = '100vw';
+                    document.getElementById('show-button').style.display = 'block';
+                    document.getElementById('hide-button').style.display = 'none';
+                }
+            </script>
+            <button id="show-button" onclick="showNavlist()"><i class="fas fa-bars"></i></button>
+            <button id="hide-button" onclick="hideNavlist()"><i class="fas fa-times"></i></button>
             <!-- Header Nav -->
-            <div class="nav">
+            <div id="nav-list" class="nav d-flex">
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Get Trained</a></li>
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Hire Talent</a></li>
@@ -34,7 +53,12 @@
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Blog</a></li>
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">About Us</a></li>
                 <li class="nav-item"><a href="#" class="nav-link font-weight-bold">Contant</a></li>
-                <li class="nav-item "><button type="button" class="btn btn-success font-weight-bold">Apply Now</button></li>
+                <li class="nav-item ">
+                    <button type="button" class="btn btn-success font-weight-bold">
+                        Apply Now
+                        <i class="fas fa-angle-right d-inline d-md-none"></i>
+                    </button>
+                </li>
             </div>
         </div>
     </header>

@@ -1,6 +1,5 @@
 body{
-    height: 100vh;
-    background-color: black !important;
+    background-color: black;
     font-family: 'Roboto', sans-serif;
 }
 .logo{
@@ -9,4 +8,42 @@ body{
 
 header .nav a{
     color:white;
+}
+
+@media only screen and (max-width: 768px){
+    body{
+        background-color: white;
+    }
+    header .nav{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 100vw;
+        height: 100vh;
+    }
+    header .nav a{
+        color: black;
+    }
+    header .nav button, 
+    header .nav button:hover, 
+    header .nav button:active,
+    header .nav button:focus{
+        background-color: white !important;
+        border: 0 !important;
+        border-color: white !important;
+        color: black !important;
+    }
+    #show-button, #hide-button{
+        border: none;
+        background-color: transparent;
+        color: black;
+        font-size: 20px;
+        z-index: 1;
+    }
+    #hide-button{
+        display: none;
+    }
 }
