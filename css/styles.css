@@ -44,7 +44,7 @@ header .nav a{
     background-color: #e6e6e6;
 }
 
-.the-media .container img{
+.the-media .container img, .strategic .container img{
     width: 100%;
 }
 
